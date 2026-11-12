@@ -16,12 +16,12 @@ export class UsuariosController {
   }
 
   @Post()
-  crearUsuario(@Body() body: { nombre: string; rol: string }) {
+  crearUsuario(@Body() body: { nombre: string; email: string; rol: string }) {
     return this.usuariosService.crear(body);
   }
 
   @Patch(':id')
-  actualizarUsuario(@Param('id') id: string, @Body() body: { nombre?: string; rol?: string }) {
+  actualizarUsuario(@Param('id') id: string, @Body() body: { nombre?: string; email?: string; rol?: string }) {
     return this.usuariosService.actualizar(Number(id), body);
   }
 

@@ -24,6 +24,7 @@ export declare class UsuariosService {
     };
     actualizar(id: number, datosActualizados: {
         nombre?: string;
+        email?: string;
         rol?: string;
     }): {
         id: number;

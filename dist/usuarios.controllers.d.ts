@@ -16,6 +16,7 @@ export declare class UsuariosController {
     };
     crearUsuario(body: {
         nombre: string;
+        email: string;
         rol: string;
     }): {
         nombre: string;
@@ -25,6 +26,7 @@ export declare class UsuariosController {
     };
     actualizarUsuario(id: string, body: {
         nombre?: string;
+        email?: string;
         rol?: string;
     }): {
         id: number;
