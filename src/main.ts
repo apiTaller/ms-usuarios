@@ -14,10 +14,8 @@ async function bootstrap() {
     }),
   );
 
-  
-  const PORT = (globalThis as typeof globalThis & { process?: { env?: { PORT?: string } } }).process?.env?.PORT || 3000;
-  await app.listen(PORT, '0.0.0.0');
-
-  console.log(` Microservicio ms-usuarios corriendo en el puerto: ${PORT}`);
+  const PORT = 3005;
+await app.listen(PORT, '0.0.0.0');
+console.log(`Microservicio ms-usuarios corriendo en el puerto: ${PORT}`);
 }
 bootstrap();

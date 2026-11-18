@@ -10,9 +10,9 @@ async function bootstrap() {
         forbidNonWhitelisted: true,
         transform: true,
     }));
-    const PORT = globalThis.process?.env?.PORT || 3000;
+    const PORT = 3005;
     await app.listen(PORT, '0.0.0.0');
-    console.log(` Microservicio ms-usuarios corriendo en el puerto: ${PORT}`);
+    console.log(`Microservicio ms-usuarios corriendo en el puerto: ${PORT}`);
 }
 bootstrap();
 //# sourceMappingURL=main.js.map
